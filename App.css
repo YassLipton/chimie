@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1170px;
+  height: 455px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.column {
+  width: 65px;
+}
+.element {
+  position: relative;
+  width: 63px;
+  height: 63px;
+  border: 1px solid pink;
+  background-color: aliceblue;
+}
+.element * {
+  position: absolute;
+}
+.element:hover {
+  border-color: aqua;
+  cursor: pointer;
+}
+.element .atomic_number {
+  font-size: 12px;
+  left: 1px;
+}
+.element .electronegativity {
+  font-size: 10px;
+  right: 7px;
+}
+.element .electron_K {
+  font-size: 7px;
+  right: 1px;
+  top: 11px;
+}
+.element .electron_L {
+  font-size: 7px;
+  right: 1px;
+  top: 19px;
+}
+.element .electron_M {
+  font-size: 7px;
+  right: 1px;
+  top: 27px;
+}
+.element .electron_N {
+  font-size: 7px;
+  right: 1px;
+  top: 35px;
+}
+.element_center {
+  position: relative;
+  top: 13px;
+  width: 63px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.element .symbol {
+  top: 3px;
+  font-size: 22px;
+}
+.element .name {
+  top: 26px;
+  font-size: 10px;
+}
+.element .mass_number {
+  top: 36px;
+  font-size: 10px;
+}
